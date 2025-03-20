@@ -10,6 +10,7 @@ phases:
   post_build:
     commands:
       - echo "Zipping application files..."
+      
 
 artifacts:
   files:
@@ -19,4 +20,4 @@ artifacts:
 deploy:
   commands:
     - echo "Starting deployment..."
-    
+   
