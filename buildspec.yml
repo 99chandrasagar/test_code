@@ -4,20 +4,17 @@ phases:
   install:
     runtime-versions:
       nodejs: latest
+    commands:
+      - echo "Installing something"
+  pre_build:
+    commands:
+      - echo "We are in build phase"
   build:
     commands:
-      - echo "Building application..."
+      - echo "we are in build block"
   post_build:
     commands:
-      - echo "Zipping application files..."
-      
+      - echo "we are in post build phase"
 
-artifacts:
-  files:
-    - '**/*'
-  discard-paths: no
 
-deploy:
-  commands:
-    - echo "Starting deployment..."
    
